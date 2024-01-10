@@ -1,0 +1,10 @@
+**/node_modules/
+**/yarn.lock
+**/coverage/
+.vscode/
+.DS_Store
+.idea
+.rollup.cache
+lerna-debug.log
+**/dist
+screenshots/**/failed/

@@ -1,0 +1,50 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "es2021": true,
+    "mocha": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": "warn", // Linter rule that warns if code formatting doesn't match Prettier's style
+    "no-async-promise-executor": "error", // Disallows using async functions as Promise executors
+    "no-const-assign": "error", // Disallows reassigning const variables
+    "no-await-in-loop": "error", // Disallows using await inside loops
+    "no-var": "error", // Disallows using var to declare variables
+    "max-len": ["error", { "code": 120 }], // Enforces a maximum line length of 120 characters
+    "object-curly-spacing": [1, "always"], // Enforces consistent spacing inside object literals
+    "eqeqeq": "error", // Enforces the use of === and !== instead of == and !=
+    "no-else-return": "error", // Disallows else blocks after return statements in if blocks
+    "no-empty-function": "error", // Disallows empty function declarations
+    "no-multi-spaces": "error", // Disallows multiple spaces in a row
+    "guard-for-in": "error", // Requires using Object.prototype.hasOwnProperty.call() when iterating over object properties with for...in
+    "no-compare-neg-zero": "error", // Disallows comparing against -0
+    "no-alert": "error", // Disallows using the alert function
+    "default-case": "error", // Requires default cases in switch statements
+    "curly": "error", // Requires curly braces around if, for, and while blocks
+    "no-eq-null": "error", // Disallows comparing against null with == or !=
+    "no-eval": "error", // Disallows using the eval function
+    "no-extra-bind": "error", // Disallows unnecessary bind() calls
+    "no-floating-decimal": "error", // Disallows numbers with a leading or trailing decimal point
+    "no-global-assign": "error", // Disallows reassigning built-in global variables
+    "no-multi-str": "error", // Disallows multi-line strings that are not wrapped in template literals
+    "no-new": "error", // Disallows using the new keyword without assigning the result to a variable
+    "no-useless-return": "error", // Disallows using return statements that don't actually return a value
+    "require-await": "error", // Requires async functions to have an await expression
+    "no-console": ["warn", { "allow": ["error"] }], // Disallows console.log statements, but allows console.error statements
+    "no-debugger": "warn" // Disallows using the debugger statement in code
+  }
+}
