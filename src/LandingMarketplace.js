@@ -18,6 +18,10 @@ export class LandingMarketplace extends RouterMixin(LitElement) {
     this.navigation('/create')
   }
 
+  /**
+   * 
+   * Muy bien!! el encargado de navegar ya que tiene el contexto del router es LandingMarketPlace 😊😊
+   */
   render() {
     return html`
       <section>

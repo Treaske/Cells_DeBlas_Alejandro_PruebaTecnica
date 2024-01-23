@@ -32,14 +32,21 @@ export class CreateProducts extends LitElement {
     `;
   }
 
+  /**
+   * 
+   * Muy bien!! utilizamos el evento submit, como mejora, puedes utilizar  new FormData(<formulario>)
+   * https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData
+   */
   agregarProducto(event) {
     event.preventDefault();
 
+    const dataForm = new FormData(event.currentTarget);
+
     const nuevoProducto = {
-      titulo: event.target.titulo.value,
-      descripcion: event.target.descripcion.value,
-      imagen: event.target.imagen.value,
-      precio: parseFloat(event.target.precio.value)
+      titulo: dataForm.get('titulo'),
+      descripcion: dataForm.get('descripcion'),
+      imagen: dataForm.get('imagen'),
+      precio: parseFloat(dataForm.get('precio')),
     };
 
     this.productos = [...this.productos, nuevoProducto];

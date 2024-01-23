@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "web-dev-server --node-resolve --open --watch"
+    "comentario router": "Utilizando app-index de moder web resolvemos el tema de la recarga",
+    "start": "web-dev-server --node-resolve --app-index ./index.html  --open --watch"
   },
   "author": "",
   "license": "ISC",

@@ -1,5 +1,8 @@
 import {html, LitElement, css } from 'lit';
 
+/**
+ * Muy bien!! enviamos un evento para navegar 
+ */
 export class MenuComponent extends LitElement {
   static styles = css`
     #menu {

@@ -2,6 +2,9 @@ import {html, LitElement} from 'lit';
 import '../../../components/CardProduct.js'
 import { landingHomeStyle } from './LandingHome.style.js';
 
+/**
+ * Muy bien!! nada que comentar, la logica la tienes bien separada y el encargado de gestionar Session storage es LandingHome 😊😊
+ */
 export class LandingHome extends  LitElement {
 
   static properties = {
